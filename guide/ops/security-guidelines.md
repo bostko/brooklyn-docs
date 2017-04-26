@@ -72,7 +72,10 @@ root login.
 ### VM Users
 
 It is strongly discouraged to use the root user on VMs being created or managed by Brooklyn.
+SSH access should be delegated on rare cases such as initial Apache Brooklyn setup and other maintenance occasions.
 
+Avoid putting config a lot of options in `etc/brooklyn.cfg` which one would later need to ssh and change.
+Keep location configuration it is preferable to use [Locations in the Catalog](./catalog/#locations-in-the-catalog).
 
 ### SSH keys
 
