@@ -80,7 +80,14 @@ use the Azure Compute ARM location. These are:
     jclouds.azurecompute.arm.publishers: OpenLogic
 
 The publishers is any item from the list available here: [https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-cli-ps-findimage](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-cli-ps-findimage)
-    
+
+    imageId: region/Publisher/Offer/sku
+
+Selecting an image from market place.
+Example: japaneast/OpenLogic/CentOS/7.3
+
+Select a custom image stored in a resource group by imageId in following format ResourceGroupName/region/imageName
+
     region: southeastasia    
 
 The region is any region from the list available here: [https://azure.microsoft.com/en-us/regions/](https://azure.microsoft.com/en-us/regions/)
